@@ -52,3 +52,14 @@ volumes:
         filesystem: ext4
         type: 0FC63DAF-8483-4772-8E79-3D69D8477DE4
         size: 1G
+
+defaults:
+  # landscape client
+  ffnH0sJpX3NFAclH777M8BdXIWpo93af:
+    landscape-url: <landscape-url>
+    account-name: <account-name>
+    registration-key: "<registration-key>"
+    auto-register:
+      enabled: true
+      computer-title-pattern: test-${model:7}-${serial:0:8}
+      wait-for-serial-as: true
