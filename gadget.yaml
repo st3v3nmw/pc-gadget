@@ -56,10 +56,25 @@ volumes:
 defaults:
   # landscape client
   ffnH0sJpX3NFAclH777M8BdXIWpo93af:
-    landscape-url: <landscape-url>
-    account-name: <account-name>
-    registration-key: "<registration-key>"
+    landscape-url: "https://landscape.stephenmwangi.com"
+    account-name: "standalone"
+    registration-key: "RegKey"
+    log-level: debug
     auto-register:
       enabled: true
-      computer-title-pattern: test-${model:7}-${serial:0:8}
+      computer-title-pattern: ${serial}
       wait-for-serial-as: true
+
+connections:
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:account-control
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:hardware-observe
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:mount-observe
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:network
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:network-bind
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:network-control
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:network-observe
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:process-control
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:scsi-generic
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:shutdown
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:snapd-control
+   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:system-observe
