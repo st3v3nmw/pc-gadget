@@ -39,7 +39,7 @@
         {
             "name": "landscape-client",
             "type": "app",
-            "default-channel": "latest/edge",
+            "default-channel": "latest/stable",
             "id": "ffnH0sJpX3NFAclH777M8BdXIWpo93af"
         }
     ]

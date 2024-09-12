@@ -62,19 +62,5 @@ defaults:
     log-level: debug
     auto-register:
       enabled: true
-      computer-title-pattern: ${serial}
+      computer-title-pattern: abc-${serial}
       wait-for-serial-as: true
-
-connections:
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:account-control
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:hardware-observe
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:mount-observe
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:network
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:network-bind
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:network-control
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:network-observe
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:process-control
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:scsi-generic
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:shutdown
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:snapd-control
-   -  plug: ffnH0sJpX3NFAclH777M8BdXIWpo93af:system-observe
